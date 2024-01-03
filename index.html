@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUKILLA'S FITNESS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--wab safe font from google-->
+    <style>
+        /* css reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(gym1.jpg);
+            color: white;
+            font-family: 'Courier New', monospace;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red;  */
+            position: absolute;
+            left: 5px;
+            top: 1px;
+
+        }
+
+        .left:hover {
+            filter: invert(100%);
+        }
+
+        .left img {
+            width: 70px;
+            /* filter: invert(100%);      photo black hoi to white and white hoi to black */
+        }
+
+
+        .left div {
+            text-align: center;
+            line-height: 70%;
+            /*logo ne choti ne rai*/
+            font-size: 14px;
+        }
+
+        .mid {
+            display: block;
+            width: 47%;
+            /*3 condition for center display:block,width,margin*/
+            margin: 14px auto;
+            /* border: 2px solid green;             */
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid yellow;           */
+            position: absolute;
+            right: 4px;
+            top: 26px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .navbar li a {
+            color: rgb(253, 253, 253);
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .btn {
+            margin: 0px 2px;
+            color: white;
+            background-color: black;
+            padding: 4px 11px;
+            border: 2px solid gray;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+
+        }
+
+        .btn:hover {
+
+            background-color: rgb(73, 71, 71);
+        }
+
+        .container {
+            border: 2px white solid;
+            margin: 89px 49px;
+            width: 25%;
+            padding: 2px 34px;
+            border-radius: 19px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 202px;
+            padding: 6px;
+            border: 2px lightgreen solid;
+            border-radius: 9px;
+            margin: 10px auto;
+            font-family: 'Courier New', monospace;
+        }
+
+        .container h1 {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .container .btn {
+            display: block;
+            margin: 15px auto;
+            width: 28%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left"> <!--left box for logo-->
+            <img src="skull.png" alt="">
+            <div>NUKILLA</div>
+        </div>
+        <div class="mid"> <!--center box for nav-->
+            <ul class="navbar">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Fitness Calc</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+        <div class="right"> <!--right box for etc-->
+            <button class="btn">
+                Call Us Now
+            </button>
+            <button class="btn">
+                E-mail Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join best gym in Surat </h1>
+        <form action="noaction.php"> <!--form fill karva backend ..i dint have-->
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Contact number">
+            </div>
+            <button class="btn">
+                !.Submit.!
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
